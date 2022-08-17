@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header.ejs')%>
+    <title>Demo</title>
+</head>
+<body>
+<%- include('./navbar.ejs')%>
+ <h1 class="text-center">vue de la page démo </h1>
+ <% for (let i = 0; i < data.length; i++) { %>
+     <p><%= data[i] %></p>
+ <% } %>
+ <img src="public/img/pain-au-chocolat.jpg">
+ <img src="public/img/Verouillage.png">
+
+</body>
+</html>

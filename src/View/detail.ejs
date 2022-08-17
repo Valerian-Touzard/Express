@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header.ejs')%>
+    <title>Page</title>
+</head>
+<body>
+<%- include('./navbar.ejs')%>
+<h1 class="text-center">User Works !</h1>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><%= unUser.name %></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= unUser.username %></h6>
+        <p class="card-text"><%= unUser.email %></p>
+        <p class="card-text"><%= unUser.phone %></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <%- include('./header.ejs')%>
+        <title>Page</title>
+    </head>
+    <body>
+        <%- include('./navbar.ejs')%>
+        <h1 class="text-center">Ajout utilisateur !</h1>
+
+        <form action="/traitement" method="post">
+            <div class="form-group">
+                <label for="nom">nom</label>
+                <input type="text" class="form-control" id="nom" name="name" placeholder="Ex: Paul">
+            </div>
+            <div class="form-group">
+                <label for="pseudo">pseudo</label>
+                <input type="text" class="form-control" id="pseudo" name="username" placeholder="Ex: xX_Darksasukedu93_Xx">
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="number" class="form-control" id="phone" name="phone" placeholder="Ex: 06 00 00 00 00">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ex: Jean.Paul@gmail.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>
